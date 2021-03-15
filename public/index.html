@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+    <script defer src="./bundle.js"></script>
+  </head>
+  <body>
+    <main id="main">
+      <header id="nav">
+        <h1>TripPlanner</h1>
+      </header>
+      <section id="content">
+        <div id="map-container">
+          <div id="map"></div>
+        </div>
+        <aside id="sidebar">
+          <div id="available">
+            <div class="avail-section" id="hotels">
+              <h2>Hotels</h2>
+              <div class="selector">
+                <select name="selectedHotel" id="selectedHotel">
+                  <option value="hotel">A hotel</option>
+                </select>
+                <button class="sideButton">X</button>
+              </div>
+            </div>
+            <div class="avail-section" id="restaurants">
+              <h2>Restaurants</h2>
+              <div class="selector">
+                <select name="selectedRestaurant" id="selectedRestaurant">
+                  <option value="restaurant">A restaurant</option>
+                </select>
+                <button class="sideButton">X</button>
+              </div>
+            </div>
+            <div class="avail-section" id="activities">
+              <h2>Activities</h2>
+              <div class="selector">
+                <select name="selectedActivity" id="selectedActivity">
+                  <option value="activity">An activity</option>
+                </select>
+                <button class="sideButton">X</button>
+              </div>
+            </div>
+          </div>
+          <div id="itinerary">
+            <div class="itin-section" id="hotels-itin">
+              <h2>My Hotels</h2>
+              <div class="list">
+                <ul>
+                  <li>
+                    <span>Placeholder Hotel</span>
+                    <button class="sideButton">X</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="itin-section" id="restaurants-itin">
+              <h2>My Restaurants</h2>
+              <div class="list">
+                <ul>
+                  <li>
+                    <span>Placeholder Restaurant</span>
+                    <button class="sideButton">X</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="itin-section" id="activities-itin">
+              <h2>My Activities</h2>
+              <div class="list">
+                <ul>
+                  <li>
+                    <span>Placeholder Activity</span>
+                    <button class="sideButton">X</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
